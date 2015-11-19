@@ -1,0 +1,22 @@
+{
+  "name": "protractor-revisited",
+  "version": "1.0.0",
+  "description": "Presentation of using Angular Protractor for End-to-End testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lavinjj/Protractor-Revisted.git"
+  },
+  "author": "Jim Lavin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lavinjj/Protractor-Revisted/issues"
+  },
+  "homepage": "https://github.com/lavinjj/Protractor-Revisted#readme",
+  "dependencies": {
+    "protractor": "^3.0.0"
+  }
+}
