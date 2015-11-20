@@ -1,4 +1,4 @@
-describe('Brew Everywhere Registration', function(){
+xdescribe('Brew Everywhere Registration', function(){
     var now = new Date();
     var username = 'Test_User_' + now.getTime();
     var email = 'Test_User_' + now.getTime() + '@nomail.com';
@@ -16,7 +16,7 @@ describe('Brew Everywhere Registration', function(){
     });
 
     it('user name field should be invalid by default', function(){
-        expect(element(by.model('brewer.UserName')).getAttribute('class')).toContain('ng-invalid');
+        expect(element(by.model('brewer.UserName')).getAttribute('class')).toContain('ng-invalid ');
     });
 
     it('user name field should be required by default', function(){

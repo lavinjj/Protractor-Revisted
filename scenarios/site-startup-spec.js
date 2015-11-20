@@ -8,7 +8,10 @@ describe('Brew Everywhere App', function() {
     });
 
     it('should have a login form', function(){
-        expect(element(by.css('[name="loginForm"]')).isPresent()).toBe(true);
+        element(by.css('[name="loginForm"]')).isPresent().then(function(value){
+            console.log(value);
+            expect(value).toBe(true);
+        });
     });
 
     it('should have a login with google button', function(){
@@ -26,6 +29,6 @@ describe('Brew Everywhere App', function() {
     it('should navigate to the register page when the register button is clicked', function(){
         element(by.css('[href="#/register"]')).click();
 
-        expect(browser.getCurrentUrl()).toBe('http://breweverywhere.com/#/register');
+        expect(browser.getCurrentUrl()).toBe(browser.baseUrl + '/#/register');
     });
 });
